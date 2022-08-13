@@ -4,11 +4,13 @@ import IconComplete from '../../images/icon-complete.svg';
 const SuccessFormat = () => {
     return(
         <div>
-            <img
-                src={IconComplete}
-                alt='complete-icon'
-                className='img-complete'
-            />
+            <div className='img-complete'>
+                <img
+                    src={IconComplete}
+                    alt='complete-icon'
+                    style={{width: '50px'}}
+                />
+            </div>
             
             <div className='text-caps'>
                 THANK YOU!

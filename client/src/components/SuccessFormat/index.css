@@ -1,5 +1,4 @@
 .img-complete{
-    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,10 +7,16 @@
 .text-caps{
     margin-top: 15px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text{
     color: rgb(170, 170, 170);
     margin-top: 15px;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

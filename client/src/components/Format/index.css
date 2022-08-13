@@ -1,0 +1,121 @@
+.main-content{
+    display: flex;
+    height: 97vh;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.main-img{
+    width: 33%;
+}
+
+label{
+    text-align: left;
+}
+
+input{
+    border-radius: 5px;
+    height: 25px;
+    border-color: rgba(194, 194, 194, 0.978);
+}
+
+.front-card-alignment{
+    position: absolute;
+    width: 300px;
+    left: 10%;
+    top: 20%;
+}
+
+.back-card-alignment{
+    position: absolute;
+    width: 300px;
+    left: 16%;
+    top: 50%;
+}
+
+.form-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.card-holder-name{
+    margin-top: 5px;
+}
+
+.text{
+    text-align: left;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.date{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+
+    margin-right:5px;
+}
+
+.expire-date{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.text-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.data-input{
+    display: flex;
+    flex-direction: row;
+}
+
+.csv-label{
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-input{
+    display: flex;
+    align-content: space-between;
+}
+
+.month-input{
+    width: 30px;
+    margin-right: 15px;
+}
+
+.year-input{
+    width: 30px;
+}
+
+.csv-input{
+    width: 30px;
+}
+
+.button{
+    margin-top: 15px;
+    width: 170px;
+    background-color: purple;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.complete-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error{
+    color: red;
+}

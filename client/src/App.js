@@ -1,9 +1,9 @@
-import Format from './components/Format'
-
+import Format from './components/Format';
+import SuccessFormat from './components/SuccessFormat'
 const App = () => {
   return (
     <div className="App">
-      <Format />
+      <SuccessFormat />
     </div>
   );
 }

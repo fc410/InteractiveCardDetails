@@ -107,6 +107,10 @@ const Format = () => {
         <div className="main-content">
             <img src={MainImg} alt='front card' className='main-img'/>
             
+            <div className='back-card-alignment'>
+                <BackCard cvc={cvc}/>
+            </div>
+
             <div className='front-card-alignment'>
                 <FrontCard 
                     cardNum={cardNumber}
@@ -116,13 +120,9 @@ const Format = () => {
                 />
             </div>
 
-            <div className='back-card-alignment'>
-                <BackCard cvc={cvc}/>
-            </div>
-
             <form className='form-data'>
                 { !complete ? 
-                    <div>
+                    <div className='main-data'>
                         <lable className='text'>
                             CARD HOLDER'S NAME
                             <input 
@@ -208,7 +208,9 @@ const Format = () => {
                         </label>
                     </div>
                 </div></div> : 
+                <div>
                     <SuccessFormat />
+                </div>
                 }
                 <button 
                     className='button'

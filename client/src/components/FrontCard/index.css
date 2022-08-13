@@ -24,6 +24,7 @@
 .exp-date{
     color: white;
     position: absolute;
+    font-size: 15px;
     top: 75%;
     left: 79%;
 }
@@ -31,6 +32,32 @@
 .name{
     color: white;
     position: absolute;
+    font-size: 15px;
     top: 75%;
     left: 5%;
+}
+
+@media screen and (max-width: 780px) {
+    .number{
+        font-size: 15px;
+    }
+
+    .name{
+        font-size: 11px;
+    }
+    .exp-date{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 480px){    
+    .number{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .number{
+        font-size: 14px;
+    }
 }

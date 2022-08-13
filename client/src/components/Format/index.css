@@ -39,7 +39,6 @@ input{
     justify-content: center;
     align-items: center;
     width: 100%;
-
 }
 .card-holder-name{
     margin-top: 5px;
@@ -118,4 +117,51 @@ input{
 
 .error{
     color: red;
+}
+
+@media screen and (max-width: 780px){
+    .back-card-alignment{
+        width: 200px;
+    }
+
+    .front-card-alignment{
+        width: 200px;
+    }
+}
+
+/* For smart phone devices */
+@media screen and (max-width: 480px) {
+    .main-content{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .main-img{
+        content: url("../../images/bg-main-mobile.png");
+        width: 100%;
+        height: 33%;
+    }
+
+    .main-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .back-card-alignment{
+        width: 55%;
+        left: 40%;
+        top : 6%;
+    }
+    
+    .front-card-alignment{
+        width: 55%;
+        left: 10%;
+        top:  18.5%
+    }
+    .form-data{
+        height: 50%;
+    }
 }

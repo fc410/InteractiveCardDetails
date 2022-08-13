@@ -1,0 +1,14 @@
+.main-back-card{
+    position: relative;
+}
+
+.back-card-img{
+    width: 100%;
+}
+
+.cvc-num{
+    position: absolute;
+    top: 45%;
+    left: 81%;
+    color: white;
+}

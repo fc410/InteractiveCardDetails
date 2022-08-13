@@ -1,9 +1,17 @@
 import './index.css';
+import BCard from '../../images/bg-card-back.png'
 
-const BackCard = () => {
+const BackCard = ({cvc}) => {
     return(
-        <div>
-            Backcard component
+        <div className="main-back-card">
+            <img 
+                src={BCard} 
+                alt='back-card'
+                style={{width: '100%'}}
+            />
+            <div className='cvc-num'>
+                {cvc}
+            </div>
         </div>
     )
 }

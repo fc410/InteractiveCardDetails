@@ -1,0 +1,36 @@
+.main-card{
+    position: relative;
+}
+.front-card-img{
+    width: 100%;
+}
+
+.logo{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    height: 23px;
+}
+
+.number{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 21px;
+    letter-spacing: 3px;
+}
+
+.exp-date{
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 79%;
+}
+
+.name{
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 5%;
+}

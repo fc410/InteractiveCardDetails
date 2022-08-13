@@ -7,7 +7,7 @@ const BackCard = ({cvc}) => {
             <img 
                 src={BCard} 
                 alt='back-card'
-                style={{width: '100%'}}
+                className='back-card-img'
             />
             <div className='cvc-num'>
                 {cvc}

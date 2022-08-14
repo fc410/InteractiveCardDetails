@@ -17,18 +17,36 @@ const FrontCard = ({cardNum, MM, YY, fullName}) => {
                 alt='card-logo' 
                 className='logo'
             />
+            {
+                cardNum === '' ? 
+                <div className='number'>
+                    0000 0000 0000 0000
+                </div>:
 
-            <div className='number'>
+                <div className='number'>
                 {cardNum}
-            </div>
+                </div>
+            }
 
-            <div className='name'>
-                {fullName}
-            </div>
+            {
+                fullName === '' ?  
+                <div className='name'>
+                    Fernando Crespo
+                </div>:
+                <div className='name'>
+                    {fullName}
+                </div>
+            }
 
-            <div className='exp-date'>
-                {date}
-            </div>
+            {
+                date === '/' ?
+                <div className='exp-date'>
+                    00/00
+                </div>:
+                <div className='exp-date'>
+                    {date}
+                </div>
+            }
         </div>
     )
 }

@@ -6,31 +6,26 @@
 }
 
 .main-img{
-    width: 33%;
-}
-
-label{
-    text-align: left;
+    width: 40%;
 }
 
 input{
     border-radius: 5px;
     height: 25px;
-    border-color: rgba(194, 194, 194, 0.978);
 }
 
 .front-card-alignment{
     position: absolute;
-    width: 300px;
+    width: 25%;
     left: 10%;
     top: 20%;
 }
 
 .back-card-alignment{
     position: absolute;
-    width: 300px;
+    width: 25%;
     left: 16%;
-    top: 50%;
+    top: 51%;
 }
 
 .form-data{
@@ -40,42 +35,68 @@ input{
     align-items: center;
     width: 100%;
 }
+
+.holder-label{
+    display:flex;
+    text-align: left;
+    font-size: 15px;
+    color:rgb(53, 53, 53);
+}
+
+.card-label{
+    font-size: 15px;
+    color:rgb(53, 53, 53);
+}
+
 .card-holder-name{
     margin-top: 5px;
+    width: 30%;
+}
+
+.card-number{
+    width: 30%;
 }
 
 .text{
-    text-align: left;
-    margin-top: 15px;
-    display: flex;
     flex-direction: column;
 }
+
+.text-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.main-data{
+    width: 100%;
+}
+
+.date-cvc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    width:15.5%;
+}
+
 
 .date{
     margin-top: 15px;
     display: flex;
     flex-direction: column;
 
-    margin-right:5px;
 }
 
-.expire-date{
-    display: flex;
-    flex-direction: row;
-  
-}
-
-.text-data{
-    display: flex;
-    flex-direction: column;
-}
-
-.data-input{
-    display: flex;
-    flex-direction: row;
-}
-
-.csv-label{
+.cvc-label{
     margin-left: 35px;
     display: flex;
     flex-direction: column;
@@ -87,21 +108,22 @@ input{
 }
 
 .month-input{
-    width: 30px;
+    width: 30%;
     margin-right: 15px;
 }
 
 .year-input{
-    width: 30px;
+    width: 30%;
 }
 
-.csv-input{
-    width: 30px;
+.cvc-input{
+    margin-left: 35px;
+    width: 70%;
 }
 
 .button{
     margin-top: 15px;
-    width: 170px;
+    width: 30%;
     background-color: purple;
     color: white;
     height: 30px;
@@ -162,6 +184,22 @@ input{
         top:  18.5%
     }
     .form-data{
-        height: 50%;
+        height: 60%;
+    }
+
+    .card-holder-name{
+        width:100%;
+    }
+    .col{
+        width:100px;
+    }
+
+    .date-inputs{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .card-number{
+        width: 100%;
     }
 }

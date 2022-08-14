@@ -9,7 +9,7 @@
     position: absolute;
     left: 5%;
     top: 10%;
-    height: 23px;
+    height: 18%;
 }
 
 .number{
@@ -17,24 +17,26 @@
     position: absolute;
     top: 50%;
     left: 5%;
-    font-size: 21px;
+    font-size: 25px;
     letter-spacing: 3px;
 }
 
 .exp-date{
     color: white;
     position: absolute;
-    font-size: 15px;
-    top: 75%;
+    font-size: 14px;
+    top: 80%;
     left: 79%;
+    letter-spacing: 1px;
 }
 
 .name{
     color: white;
     position: absolute;
-    font-size: 15px;
-    top: 75%;
+    font-size: 14px;
+    top: 80%;
     left: 5%;
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 780px) {

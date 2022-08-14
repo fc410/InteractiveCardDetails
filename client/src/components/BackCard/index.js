@@ -9,9 +9,15 @@ const BackCard = ({cvc}) => {
                 alt='back-card'
                 className='back-card-img'
             />
-            <div className='cvc-num'>
-                {cvc}
-            </div>
+            {
+                cvc === '' ?
+                <div className='cvc-num'>
+                    123
+                </div>:
+                <div className='cvc-num'>
+                    {cvc}
+                </div>
+            }
         </div>
     )
 }

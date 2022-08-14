@@ -1,6 +1,5 @@
 import './index.css';
 import MainImg from '../../images/bg-main-desktop.png';
-import IconComplete from '../../images/icon-complete.svg';
 import {useState, useEffect} from 'react';
 import FrontCard from '../FrontCard';
 import BackCard from '../BackCard';
@@ -123,92 +122,110 @@ const Format = () => {
             <form className='form-data'>
                 { !complete ? 
                     <div className='main-data'>
-                        <lable className='text'>
-                            CARD HOLDER'S NAME
+                        <div className='text-label'>
+                            <lable className='holder-label'>
+                                CARD HOLDER'S NAME
+                            </lable>
+
                             <input 
                                 type='text' 
                                 className='card-holder-name'
                                 value={name}
                                 onChange={updateName}
-                                placeholder='Please enter your full name'
+                                placeholder='e.g. Fernando Crespo'
                                 required
                             />
-                        </lable>
-                        <div className='error'>
-                            {!nameError ? null : fieldRequired}
+
+                            <div className='error'>
+                                {!nameError ? null : fieldRequired}
+                            </div>
                         </div>
-                        <lable className='text'>
-                            CARD NUMBER
+
+                        <div className='text-label'>
+                            <lable className='card-label'>
+                                CARD NUMBER
+                            </lable>
+
                             <input 
                                 type='text' 
                                 name='card-number' 
                                 className='card-number'
-                                value={cardNumber}                                maxLength='19'
+                                value={cardNumber}                                
+                                maxLength='19'
                                 onChange={updateCardNumber}
-                                placeholder='Enter your card number'
+                                placeholder='e.g. 1234 5678 9123 0000'
                                 required
                             />
+
                             <div className='error'>
                                 {!cardNumberError ? null : fieldRequired}
                             </div>
+
                             <div className='error'>
                                 {!cardNumError ? null : numberError}
                             </div>
-                        </lable>
-                <div className='date'>
-                    <div className='expire-date'>
-                        <lable className='text-date'>
-                            EXP. DATE (MM/YY)
-                            <div className='date-input'>
-                                <input 
-                                    type='text' 
-                                    name='month' 
-                                    maxLength="2" 
-                                    className='month-input'
-                                    onChange={updateMonth}
-                                    placeholder='MM'
-                                    required
-                                />
+                        </div>
+
+                        <div className='date-cvc'>
+                            <div className='col'>
+                                <lable>EXP. DATE (MM/YY)</lable>
+                                <div className='date-inputs'>
+                                    <input 
+                                        type='text' 
+                                        name='month' 
+                                        maxLength="2" 
+                                        className='month-input'
+                                        onChange={updateMonth}
+                                        placeholder='MM'
+                                        required
+                                    />
+
+                                    <input 
+                                        type='text' 
+                                        name='year' 
+                                        maxLength="2" 
+                                        className='year-input'
+                                        onChange={updateYear}
+                                        placeholder='YY'
+                                        required
+                                    />
+
+                                    <div className='error'>
+                                        {!expirationDateError ? null : fieldRequired}
+                                    </div>
+
+                                    <div className='error'>
+                                        {!expirationDateNumberError ? null : numberError}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col'>
+                                <label className='cvc-label'>CVC</label>
 
                                 <input 
-                                    type='text' 
-                                    name='year' 
-                                    maxLength="2" 
-                                    className='year-input'
-                                    onChange={updateYear}
-                                    placeholder='YY'
-                                    required
-                                />
-                            </div>
-                            <div className='error'>
-                                {!expirationDateError ? null : fieldRequired}
-                            </div>
-                            <div className='error'>
-                                {!expirationDateNumberError ? null : numberError}
-                            </div>
-                        </lable>
-
-                        <label className='csv-label'>
-                            CVC
-                            <input 
                                 type='text' 
-                                name='csv' 
+                                name='cvc' 
                                 maxLength="3" 
-                                className='csv-input'
+                                className='cvc-input'
                                 onChange={updateCvc}
-                                placeholder='CVC'
+                                placeholder='e.g. 123'
                                 required
-                            />
-                            <div className='error'>
-                                {!cvcError ? null : fieldRequired}
+                                />
+
+                                <div className='error'>
+                                    {!cvcError ? null : fieldRequired}
+                                </div>
+
+                                <div className='error'>
+                                    {!cvcNumberError ? null : numberError}
+                                </div>
                             </div>
-                            <div className='error'>
-                                {!cvcNumberError ? null : numberError}
-                            </div>
-                        </label>
-                    </div>
-                </div></div> : 
-                <div>
+
+                        </div>
+
+                        </div> : 
+                <div className='success'>
                     <SuccessFormat />
                 </div>
                 }

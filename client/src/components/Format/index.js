@@ -213,12 +213,14 @@ const Format = () => {
                                 required
                                 />
 
-                                <div className='error'>
-                                    {!cvcError ? null : fieldRequired}
-                                </div>
+                                <div style={{marginLeft: '35px'}}>
+                                    <div className='error'>
+                                        {!cvcError ? null : fieldRequired}
+                                    </div>
 
-                                <div className='error'>
-                                    {!cvcNumberError ? null : numberError}
+                                    <div className='error'>
+                                        {!cvcNumberError ? null : numberError}
+                                    </div>
                                 </div>
                             </div>
 

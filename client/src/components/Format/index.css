@@ -182,7 +182,7 @@ input{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
     .front-card-alignment{
         top: 16%
     }

@@ -8,7 +8,7 @@ const SuccessFormat = () => {
                 <img
                     src={IconComplete}
                     alt='complete-icon'
-                    style={{width: '50px'}}
+                    style={{width: '75px'}}
                 />
             </div>
             
@@ -19,6 +19,10 @@ const SuccessFormat = () => {
             <div className='text'>
                 We've added you details
             </div>
+
+            <button className='temp-button'>
+                Confirm
+            </button>
         </div>
     )
 }

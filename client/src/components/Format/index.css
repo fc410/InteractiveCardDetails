@@ -1,12 +1,12 @@
 .main-content{
+    position:absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    height: 97vh;
-    font-weight: bold;
-    font-size: 10px;
-}
-
-.main-img{
-    width: 40%;
+    height: 100vh;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 input{
@@ -14,192 +14,69 @@ input{
     height: 25px;
 }
 
+.main-img{
+    width: 33.3%;
+}
+
 .front-card-alignment{
     position: absolute;
     width: 25%;
-    left: 10%;
+    left: 15%;
     top: 20%;
 }
 
 .back-card-alignment{
     position: absolute;
     width: 25%;
-    left: 16%;
+    left: 20%;
     top: 51%;
 }
 
-.form-data{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.button{
+    margin-top: 30px;
+    background-color: purple;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
     width: 100%;
 }
 
-.holder-label{
-    display:flex;
-    text-align: left;
-    font-size: 15px;
-    color:rgb(53, 53, 53);
-}
-
-.card-label{
-    font-size: 15px;
-    color:rgb(53, 53, 53);
-}
-
-.card-holder-name{
-    margin-top: 5px;
-    width: 30%;
+.content{
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-number{
-    width: 30%;
-}
-
-.text{
-    flex-direction: column;
-}
-
-.text-label{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 15px;
-}
-
-.main-data{
-    width: 100%;
 }
 
 .date-cvc{
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    width: 100%;
 }
 
 .col{
     display: flex;
     flex-direction: column;
-    width:15.5%;
 }
 
-
-.date{
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-
+.month{
+    width: 35%;
+    margin-right: 10px;
 }
 
-.cvc-label{
-    margin-left: 35px;
-    display: flex;
-    flex-direction: column;
+.year{
+    width: 35%;
 }
 
-.date-input{
-    display: flex;
-    align-content: space-between;
-}
-
-.month-input{
-    width: 30%;
-    margin-right: 15px;
-}
-
-.year-input{
-    width: 30%;
-}
-
-.cvc-input{
-    margin-left: 35px;
-    width: 70%;
-}
-
-.button{
-    margin-top: 15px;
-    width: 30%;
-    background-color: purple;
-    color: white;
-    height: 30px;
-    border-radius: 5px;
-}
-
-.complete-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.error{
-    color: red;
-}
-
-@media screen and (max-width: 780px){
-    .back-card-alignment{
-        width: 200px;
-    }
-
-    .front-card-alignment{
-        width: 200px;
-    }
-}
-
-/* For smart phone devices */
-@media screen and (max-width: 480px) {
-    .main-content{
-        flex-direction: column;
-        height: 100vh;
-    }
-
-    .main-img{
-        content: url("../../images/bg-main-mobile.png");
-        width: 100%;
-        height: 33%;
-    }
-
-    .main-data{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-    }
-
-    .back-card-alignment{
-        width: 55%;
-        left: 40%;
-        top : 6%;
-    }
-    
-    .front-card-alignment{
-        width: 55%;
-        left: 10%;
-        top:  18.5%
-    }
-    .form-data{
-        height: 60%;
-    }
-
-    .card-holder-name{
-        width:100%;
-    }
-    .col{
-        width:100px;
-    }
-
-    .date-inputs{
-        display:flex;
-        flex-direction: row;
-    }
-
-    .card-number{
-        width: 100%;
-    }
+.success{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    width: 28%;
 }

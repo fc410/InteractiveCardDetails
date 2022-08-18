@@ -21,6 +21,10 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+    
+}
+
 @media screen and (max-width: 481px) {
     .img-complete{
         margin-bottom: 40px;

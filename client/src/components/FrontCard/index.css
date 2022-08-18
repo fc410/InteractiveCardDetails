@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 481px){
     .number{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .name{
@@ -97,9 +97,6 @@
 }
 
 @media screen and (max-width: 400px){
-    .number{
-        font-size: 18px;
-    }
 
     .name{
         font-size: 11px;

@@ -80,3 +80,49 @@ input{
     left: 60%;
     width: 28%;
 }
+
+@media screen and (max-width: 768px) {
+    .front-card-alignment{
+        width: 35%;
+        left: 10%;
+        top: 25%;
+    }
+
+    .back-card-alignment{
+        width: 35%;
+        left: 15%;
+    }
+
+    .main-content{
+        font-size: 9px;
+    }
+
+    .card-hold-name{
+        width: 100%;
+    }
+
+    .card-number-text{
+        width: 100%;
+    }
+
+    .col{
+        width: 50%;
+    }
+
+    .cvc-input{
+        margin-left: 5px;
+        width: 95%;
+    }
+
+    .cvc-label{
+        margin-left: 5px;
+    }
+
+    .button{
+        width: 105%;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    
+}

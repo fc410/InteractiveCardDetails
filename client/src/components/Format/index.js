@@ -197,7 +197,7 @@ const Format = () => {
                         </div>
 
                         <div className='col'>
-                            <label>CVC</label>
+                            <label className='cvc-label'>CVC</label>
 
                             <input 
                                 type='text'

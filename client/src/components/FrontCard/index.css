@@ -46,20 +46,38 @@
 
     .name{
         font-size: 11px;
+        top: 78%;
     }
     .exp-date{
         font-size: 11px;
+        top: 78%;
     }
 }
 
-@media screen and (max-width: 480px){    
+@media screen and (max-width: 768px) {
     .number{
         font-size: 18px;
     }
+
+    .name{
+        font-size: 15px;
+    }
+
+    .exp-date{
+        font-size: 15px;
+    }
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 626px) {
     .number{
         font-size: 14px;
+    }
+
+    .name{
+        font-size: 11px;
+    }
+
+    .exp-date{
+        font-size: 11px;
     }
 }

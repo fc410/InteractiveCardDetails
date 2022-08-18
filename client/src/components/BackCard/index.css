@@ -14,3 +14,9 @@
     font-size: 12px;
     letter-spacing: 1px;
 }
+
+@media screen and (max-width: 626px) {
+    .cvc-num{
+        font-size: 10px;
+    }
+}

@@ -81,3 +81,17 @@
         font-size: 11px;
     }
 }
+
+@media screen and (max-width: 481px){
+    .number{
+        font-size: 22px;
+    }
+
+    .name{
+        font-size: 13px;
+    }
+
+    .exp-date{
+        font-size: 13px;
+    }
+}

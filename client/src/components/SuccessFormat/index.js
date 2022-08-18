@@ -20,7 +20,7 @@ const SuccessFormat = () => {
                 We've added you details
             </div>
 
-            <button className='temp-button'>
+            <button className='button'>
                 Confirm
             </button>
         </div>

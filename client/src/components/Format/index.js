@@ -90,7 +90,7 @@ const Format = () => {
             setErrors(prev => ({...prev, cvcError: true}));
         }
         if(data.name.length >= 1 && 
-            data.cardNumber.length >=1 &&
+            data.cardNumber.length > 18 &&
             /^[0-9]+$/.test(cardNum.join('')) === true && 
             data.month.length >= 1 && 
             data.year.length >= 1 && 

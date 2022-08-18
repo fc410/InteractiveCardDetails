@@ -20,3 +20,9 @@
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 481px) {
+    .cvc-num{
+        font-size: 12px;
+    }
+}
